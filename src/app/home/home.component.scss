@@ -1,0 +1,25 @@
+@import  '~src/styles.scss';
+
+.div-general{
+    /* max-width: 300px;
+    min-width: 100px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    left: 50%;
+    right: 50%;
+    top:50%;
+    transform: translate(-50%, -50%); */
+}
+
+.card{
+    margin:5px
+}
+
+.btn-login{
+    color: map-get($customPrimary, 500 )
+  
+}
+
+
