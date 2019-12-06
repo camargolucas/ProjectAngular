@@ -37,7 +37,12 @@ p{
 }
 
 .login-text{
+    position: absolute;
+    width: 100%;
+    left: 67%;
+    right: 50%;
     
+
 }
 
 ::ng-deep .mat-form-field-underline {

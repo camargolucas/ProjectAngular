@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ListRoutingModule } from './list-routing.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { MatFormFieldModule, MatInputModule, MatCardModule, MatIconModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatCardModule, MatIconModule, MatButtonModule } from '@angular/material';
 
 
 @NgModule({
@@ -14,7 +14,8 @@ import { MatFormFieldModule, MatInputModule, MatCardModule, MatIconModule } from
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ]
 })
 export class ListModule { }
