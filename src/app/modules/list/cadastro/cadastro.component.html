@@ -1,10 +1,6 @@
 <div class="login-text">
     <p>Already a user ? <button mat-button [routerLink]="['/login']" routerLinkActive="router-link-active" >Log In</button></p> 
-   
 </div>
-
-
-
 
 <mat-card class="div-card">
     <mat-card-content class="div-form-content">
@@ -14,7 +10,6 @@
                 Email
             </mat-label>
             <input matInput placeholder="Email">
-
         </mat-form-field>
 
         <mat-form-field>
@@ -40,5 +35,8 @@
             </mat-label>
             <input matInput placeholder="Second Name">
         </mat-form-field>
+        <div>
+            <button color="primary" mat-raised-button><p>SUBMIT</p></button>
+        </div>
     </mat-card-content>
 </mat-card>
