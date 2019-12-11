@@ -38,14 +38,29 @@ p{
 
 .login-text{
     position: absolute;
-    width: 100%;
     left: 67%;
-    right: 50%;
     
-
+    
 }
 
 ::ng-deep .mat-form-field-underline {
     display: none;
   }
 
+.mat-raised-button{
+    color: white !important;
+    
+}
+
+
+.button-submit{
+   
+    margin-top: 5%;
+    margin-right: 10%;
+    max-width: 130px;
+    min-width: 80px;
+    width: 100%;
+}
+.div-button-submit{
+    text-align: right; 
+}
