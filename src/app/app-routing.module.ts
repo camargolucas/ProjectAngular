@@ -14,8 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule),
-    data: {animation:'isRight'}
+
+    loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
+
   },
   {
     path: '',

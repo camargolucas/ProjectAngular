@@ -38,7 +38,7 @@ p{
 
 .login-text{
     position: absolute;
-    left: 66%;
+    left: 67%;
     
     
 }
@@ -53,5 +53,23 @@ p{
     .div-card{
         left: 50%;
         
-    }
+}
+}
+.mat-raised-button{
+    color: white !important;
+    
+}
+
+
+.button-submit{
+   
+    margin-top: 5%;
+    margin-right: 10%;
+    max-width: 130px;
+    min-width: 80px;
+    width: 100%;
+}
+
+.div-button-submit{
+    text-align: right; 
 }
