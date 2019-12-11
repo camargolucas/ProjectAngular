@@ -1,47 +1,70 @@
 <div class="login-text">
-    <p>Already a user ? <button mat-button [routerLink]="['/login']" routerLinkActive="router-link-active" >Log In</button></p> 
+    <p>Already a user ? <button mat-button [routerLink]="['/login']" routerLinkActive="router-link-active">Log
+            In</button></p>
 </div>
 
-<mat-card class="div-card">
-    <mat-card-content class="div-form-content">
-        <mat-form-field class="mat-form-field">
-            <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
-                mail_outline</mat-icon>
-            <mat-label class="mat-label">
-                Email
-            </mat-label>
-            <input matInput placeholder="Email">
-        </mat-form-field>
+<div *ngIf="getIsRegistred(); then templateUnregistred; else templateRegistred">
+    Here is never showing
+</div>
 
-        <mat-form-field>
-            <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
-                lock_outline</mat-icon>
-            <mat-label class="mat-label">
-                Password
-            </mat-label>
-            <input matInput placeholder="Password" type="password">
-        </mat-form-field>
-
-        <mat-form-field>
-            <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
-                perm_identity_outline</mat-icon>
-            <mat-label class="mat-label">
-                First Name
-            </mat-label>
-            <input matInput placeholder="First Name">
-        </mat-form-field>
-
-        <mat-form-field>
-            <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
-                perm_identity_outline</mat-icon>
-            <mat-label class="mat-label">
-                Second Name
-            </mat-label>
-            <input matInput placeholder="Second Name">
-        </mat-form-field>
-        <div class="div-button-submit">
-            <button mat-raised-button color="primary" class="button-submit" >Submit</button>
+<ng-template #templateUnregistred>
+    <mat-card class="div-card">
+        <div class="div-icon-back">
+            <button (click)="setIsRegistred(false)" color="primary" class="btn-icon-back" mat-button>
+                <mat-icon>keyboard_backspace_rounded</mat-icon>
+            </button>
         </div>
-    </mat-card-content>
+        <mat-card-content class="div-card-content-registred">
+            <div class="div-content-registred-title-text">Check your<br> inbox</div>
+            <div class="div-content-registred-message">We have sent a confirmation link to the email adress: <br><br>
+                <div class="div-content-registred-message-email">lululindo@gmail.com</div>
+            </div>
 
-</mat-card>
+        </mat-card-content>
+    </mat-card>
+</ng-template>
+<ng-template #templateRegistred>
+    <mat-card class="div-card">
+        <mat-card-content class="div-form-content">
+            <mat-form-field class="mat-form-field">
+                <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
+                    mail_outline</mat-icon>
+                <mat-label class="mat-label">
+                    Email
+                </mat-label>
+                <input matInput placeholder="Email">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
+                    lock_outline</mat-icon>
+                <mat-label class="mat-label">
+                    Password
+                </mat-label>
+                <input matInput placeholder="Password" type="password">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
+                    perm_identity_outline</mat-icon>
+                <mat-label class="mat-label">
+                    First Name
+                </mat-label>
+                <input matInput placeholder="First Name">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-icon color="primary" class="icon" matPrefix aria-hidden="false" aria-label="Example home icon">
+                    perm_identity_outline</mat-icon>
+                <mat-label class="mat-label">
+                    Second Name
+                </mat-label>
+                <input matInput placeholder="Second Name">
+            </mat-form-field>
+            <div class="div-button-submit">
+                <button (click)="setIsRegistred(true)" mat-raised-button color="primary"
+                    class="button-submit">Submit</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</ng-template>

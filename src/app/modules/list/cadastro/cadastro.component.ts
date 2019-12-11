@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro.component.scss']
 })
 export class CadastroComponent implements OnInit {
-
+  isRegistred = false
   constructor() { }
 
   ngOnInit() {
   }
 
+  setIsRegistred(value) {
+    this.isRegistred = value
+  }
+  getIsRegistred() {
+    return this.isRegistred
+  }
 }
