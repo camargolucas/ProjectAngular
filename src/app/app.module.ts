@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule, MatButtonModule, MatFormFieldModule, MatCardModule, MatRippleModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatFormFieldModule, MatCardModule, MatRippleModule, MatLabel } from '@angular/material';
 import { ListModule } from './modules/list/list.module';
 import { HomeComponent } from './home/home.component';
 import { FeedModule } from './modules/feed/feed.module';
@@ -27,6 +27,7 @@ import { FeedModule } from './modules/feed/feed.module';
     MatRippleModule,
     ListModule,
     FeedModule
+
     
   ],
   providers: [],
