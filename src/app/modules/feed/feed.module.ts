@@ -12,4 +12,6 @@ import { RegistredComponent } from './registred/registred.component';
     FeedRoutingModule
   ]
 })
-export class FeedModule { }
+export class FeedModule { 
+
+ }

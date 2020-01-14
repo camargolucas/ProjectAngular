@@ -48,9 +48,10 @@ p {
   display: none;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 585px) {
   .div-card {
     left: 50%;
+    max-width: 280px;
   }
 }
 
